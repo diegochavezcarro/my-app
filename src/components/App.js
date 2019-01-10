@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import logo from '../shared/images/logo.svg';
 import './App.css';
+
+// We import our Home component here...
+import Home from './Home/Home';
 
 class App extends Component {
   render() {
@@ -20,6 +23,8 @@ class App extends Component {
             Learn React
           </a>
         </header>
+        {/* Here we add our Home component to be render it */}
+        <Home />
       </div>
     );
   }
